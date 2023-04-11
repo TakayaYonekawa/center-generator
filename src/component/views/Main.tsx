@@ -7,15 +7,15 @@ import PreviewCss from "../templates/Main/PreviewCss";
 function Main() {
   return (
     <>
-<section className="jsArea">
-    <InputArea/>
-    <PreviewArea/>
-</section>
+      <section className="jsArea">
+        <InputArea />
+        <PreviewArea />
+      </section>
 
-<section className=" previewCodeArea">
-      <PreviewHtml/>
-      <PreviewCss/>
-</section>
+      <section className=" previewCodeArea">
+        <PreviewHtml />
+        <PreviewCss />
+      </section>
     </>
   );
 }
