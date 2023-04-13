@@ -4,7 +4,7 @@ function Footer() {
   return (
   <footer className="footer">
     <div className="inner">
-      <p>Copyright (C) Takaya Blog</p>
+      <p className='m-0'>Copyright (C) Takaya Blog</p>
     </div>
   </footer>
   )

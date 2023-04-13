@@ -4,10 +4,12 @@ import {
   TypedUseSelectorHook,
 } from "react-redux";
 import inputSlice from "./redux/input/inputSlice";
+import authSlice from "./redux/firebase/authSlice";
 
 export const store = configureStore({
   reducer: {
     input: inputSlice,
+    auth: authSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

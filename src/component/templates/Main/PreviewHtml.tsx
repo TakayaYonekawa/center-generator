@@ -8,7 +8,6 @@ function PreviewHtml() {
     <div className="previewCodeContent">
     <p>HTMLプリビュー</p>
     <div className="previewHtml">
-
       &lt;div className="box"&gt;<br/>
       &lt;p className="innerText"&gt;<br/>
         <span className="previewHtmlText">{rangeVals05}</span><br/>

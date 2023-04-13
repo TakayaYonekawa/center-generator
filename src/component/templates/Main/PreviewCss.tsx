@@ -17,7 +17,7 @@ function PreviewCss() {
         display: flex;<br/>
         align-items: center;<br/>
         justify-content:center;<br/>
-  
+
         {'}'}<br/>
         <br/>
       .box .innerText{'{'}<br/>
