@@ -6,6 +6,7 @@ import Footer from "./component/templates/Footer/Footer";
 import Main from "./component/views/Main";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MyPage from "./component/views/MyPage";
+import SaveCode from "./component/views/SaveCode";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/mypage" element={<MyPage />}></Route>
+        <Route path="/save-code" element={<SaveCode />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>
