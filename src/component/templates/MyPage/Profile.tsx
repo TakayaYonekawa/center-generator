@@ -1,12 +1,12 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import { auth, useAuth } from '../../../firebase'
+import {  useAuth } from '../../../firebase'
 
 function Profile() {
   const userProfile = useAuth();
 
   return (
-    <div className="d-flex gap-3 align-items-center justify-content-center ">
+    <div className="d-flex mb-3 gap-3 align-items-center justify-content-center ">
       <div>
         <Image src={userProfile?.photoURL || ""} roundedCircle />
       </div>

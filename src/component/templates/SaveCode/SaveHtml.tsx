@@ -1,9 +1,6 @@
 import React from 'react'
-import { RootState, useSelector } from '../../../store';
 
-function SaveHtml() {
-    const {rangeVals05} = useSelector((state: RootState) => state.input);
-
+function SaveHtml({text}:any) {
 
   return (
     <div className="previewCodeContent">
@@ -11,10 +8,9 @@ function SaveHtml() {
     <div className="previewHtml">
       &lt;div className="box"&gt;<br/>
       &lt;p className="innerText"&gt;<br/>
-        <span className="previewHtmlText">{rangeVals05}</span><br/>
+        <span className="previewHtmlText">{text}</span><br/>
       &lt;/p&gt;<br/>
       &lt;/div&gt;<br/>
-
     </div>
   </div>
   )

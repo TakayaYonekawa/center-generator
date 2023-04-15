@@ -1,8 +1,6 @@
 import React from 'react'
-import { RootState, useSelector } from '../../../store';
 
-function SaveCss() {
-    const {rangeVals,rangeVals02,submitText03,submitText04} = useSelector((state: RootState) => state.input);
+function SaveCss({bgColor, color, height,width}:any) {
 
   return (
     <div className="previewCodeContent">
@@ -10,9 +8,9 @@ function SaveCss() {
     <div className="previewCss">
 
       .box{'{'}<br/>
-        width: {rangeVals}px;<br/>
-        height: {rangeVals02}px;<br/>
-        background-color: #{submitText03};<br/>
+        width: {width}px;<br/>
+        height: {height}px;<br/>
+        background-color: #{bgColor};<br/>
         display: flex;<br/>
         align-items: center;<br/>
         justify-content:center;<br/>
@@ -21,7 +19,7 @@ function SaveCss() {
         <br/>
       .box .innerText{'{'}<br/>
         font-size: 16px;<br/>
-        color: #{submitText04};<br/>
+        color: #{color};<br/>
         {'}'}<br/>
 
     </div>

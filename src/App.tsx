@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}></Route>
         <Route path="/mypage" element={<MyPage />}></Route>
-        <Route path="/save-code" element={<SaveCode />}></Route>
+        <Route path={`/save-code/:savePageId`} element={<SaveCode />}></Route>
       </Routes>
       <Footer />
     </BrowserRouter>

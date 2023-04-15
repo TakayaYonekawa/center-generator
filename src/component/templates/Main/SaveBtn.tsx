@@ -15,9 +15,11 @@ function SaveBtn() {
   
 
   const SaveCode = () => {
+    const saveCollection = db.collection("save-code").doc();
     
-    db.collection("save-code").add({
+    saveCollection.set({
       uid,
+      id: saveCollection.id,
       bgColor: rangeVals03,
       color: rangeVals04,
       width: rangeVals,
