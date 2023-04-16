@@ -3,7 +3,7 @@ import React from 'react'
 function SaveHtml({text}:any) {
 
   return (
-    <div className="previewCodeContent">
+    <div className="col-5">
     <p>HTMLプリビュー</p>
     <div className="previewHtml">
       &lt;div className="box"&gt;<br/>

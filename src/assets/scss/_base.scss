@@ -1,6 +1,16 @@
+
+body{
+  background-color: #87cefa;
+  margin: 0;
+  color: #333333;
+}
+
 p, h1,h2,h3{
   margin: 0;
+}
 
+.hidden{
+  display: none;
 }
 
 ul{

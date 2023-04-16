@@ -24,14 +24,14 @@ function SaveCode() {
   return (
     <>
       {currentCode.map((codeDetail: any) => (
-        <section className=" previewCodeArea">
+        <section key={codeDetail.id} className="container m-auto mt-5 mb-5 gap-3 d-flex flex-wrap justify-content-center justify-content-lg-between">
           <SaveHtml {...codeDetail} />
           <SaveCss {...codeDetail} />
         </section>
       ))}
 
       <div className="text-center mb-5">
-        <ToMyPage/>
+        <ToMyPage />
       </div>
     </>
   );

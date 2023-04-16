@@ -1,0 +1,13 @@
+.preview_area{
+  position: relative;
+  min-width: 500px;
+}
+
+.previewHtml,
+.previewCss {
+  margin-top: 20px;
+  border: 2px solid #333333;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #c0c0c0;
+}

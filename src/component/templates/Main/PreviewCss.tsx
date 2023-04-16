@@ -6,7 +6,7 @@ function PreviewCss() {
   const {rangeVals,rangeVals02,submitText03,submitText04} = useSelector((state: RootState) => state.input);
 
   return (
-    <div className="previewCodeContent">
+    <div className="col-10 col-md-5">
     <p>CSSプリビュー</p>
     <div className="previewCss">
 

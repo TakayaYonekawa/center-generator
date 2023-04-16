@@ -8,12 +8,12 @@ import SaveBtn from "../templates/Main/SaveBtn";
 function Main() {
   return (
     <>
-      <section className="jsArea">
+      <section className="container m-auto d-flex gap-3 flex-wrap justify-content-center  align-items-center ">
         <InputArea />
         <PreviewArea />
       </section>
 
-      <section className=" previewCodeArea">
+      <section className="container m-auto mt-5 mb-5 gap-3 d-flex flex-wrap justify-content-center">
         <PreviewHtml />
         <PreviewCss />
       </section>

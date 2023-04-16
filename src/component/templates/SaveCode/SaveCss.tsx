@@ -3,7 +3,7 @@ import React from 'react'
 function SaveCss({bgColor, color, height,width}:any) {
 
   return (
-    <div className="previewCodeContent">
+    <div className="col-5">
     <p>CSSプリビュー</p>
     <div className="previewCss">
 

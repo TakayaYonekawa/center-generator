@@ -5,7 +5,7 @@ function PreviewHtml() {
   const {rangeVals05} = useSelector((state: RootState) => state.input);
 
   return (
-    <div className="previewCodeContent">
+    <div className="col-10 col-md-5">
     <p>HTMLプリビュー</p>
     <div className="previewHtml">
       &lt;div className="box"&gt;<br/>
