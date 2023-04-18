@@ -5,16 +5,15 @@ import {
 } from "react-redux";
 import inputSlice from "./redux/input/inputSlice";
 import authSlice from "./redux/firebase/authSlice";
+import buttonSlice from "./redux/firebase/buttonSlice";
 
 export const store = configureStore({
   reducer: {
     input: inputSlice,
     auth: authSlice,
+    button: buttonSlice,
   },
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: false,
-    }),
+
 });
 
 export type AppDispatch = typeof store.dispatch;

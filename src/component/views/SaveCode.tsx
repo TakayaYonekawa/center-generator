@@ -7,7 +7,6 @@ import ToMyPage from "../parts/Bottons/ToLists";
 
 function SaveCode() {
   const { savePageId } = useParams();
-  // const [allCodes, setAllCodes] = useState<any>([]);
   const [currentCode, setCurrentCode] = useState<any>([]);
 
   useEffect(() => {
@@ -24,7 +23,7 @@ function SaveCode() {
   return (
     <>
       {currentCode.map((codeDetail: any) => (
-        <section key={codeDetail.id} className="container m-auto mt-5 mb-5 gap-3 d-flex flex-wrap justify-content-center justify-content-lg-between">
+        <section key={codeDetail.id} className="container m-auto mt-5 mb-5 gap-3 d-flex flex-wrap justify-content-center ">
           <SaveHtml {...codeDetail} />
           <SaveCss {...codeDetail} />
         </section>

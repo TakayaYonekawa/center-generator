@@ -1,4 +1,3 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/scss/style.scss";
 import Header from "./component/templates/Header/Header";

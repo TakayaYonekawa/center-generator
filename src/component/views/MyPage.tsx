@@ -4,7 +4,7 @@ import CodeLists from '../templates/MyPage/CodeLists';
 
 function MyPage() {
   return (
-    <div className='container'>
+    <div className='mypage container'>
       <Profile/>
       <CodeLists/>
     </div>

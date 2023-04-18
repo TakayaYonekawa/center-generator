@@ -11,3 +11,10 @@
   padding: 20px;
   background-color: #c0c0c0;
 }
+
+.spinner_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}

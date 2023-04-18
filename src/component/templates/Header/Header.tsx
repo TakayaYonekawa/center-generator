@@ -11,7 +11,7 @@ function Header() {
   const [user] = useAuthState(auth as any);
 
   return (
-    <header className="header">
+    <header className="mb-4 py-4 bg-white">
       <div className="container d-flex justify-content-between align-items-center">
         <h1 className="header-ttl"><Link to="/">テキスト真ん中君</Link></h1>
         {user ? (

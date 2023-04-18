@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {auth, useAuth} from "../../firebase";
+import {auth} from "../../firebase";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 
