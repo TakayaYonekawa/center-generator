@@ -24,7 +24,7 @@ function CodeLists() {
             <ListGroup.Item
               as="li"
               key={codeList.id}
-              className="position-relative"
+              className="position-relative col-lg-8 mx-lg-auto"
             >
               <Link to={`/save-code/${codeList.id}`}>保存コード</Link>
               <Button
