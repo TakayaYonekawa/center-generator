@@ -90,7 +90,7 @@ function InputArea() {
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   if (rangeVals04.length > 6) {
-                    alert("6文字以内に収めましょう");
+                    alert("6文字以内でお願いします");
                     return;
                   }
                   dispatch(handleEnterCheck(e));
