@@ -23,7 +23,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>テキスト真ん中君</title>
     <base href="/" >
     <script>
       const path = sessionStorage.getItem('path');
@@ -32,7 +32,7 @@
         sessionStorage.removeItem('path');
         window.history.replaceState(null, null, './mypage');
       }
-      if (path && path === '/save-code') {
+      if (path && path === '/save-code/*') {
         sessionStorage.removeItem('path');
         window.history.replaceState(null, null, './save-code');
       }
