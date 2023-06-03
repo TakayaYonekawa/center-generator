@@ -19,7 +19,9 @@ function InputArea() {
     useSelector((state: RootState) => state.input);
 
   return (
+    // 入力欄
     <div className="inputArea">
+      {/* 横幅 */}
       <div className="mb-1">
         Width:
         <input
@@ -34,6 +36,7 @@ function InputArea() {
         <span className="rangeNo">{rangeVals}</span>px
         <br />
       </div>
+      {/* 高さ */}
       <div className="mb-1">
         Height:
         <input
@@ -54,6 +57,7 @@ function InputArea() {
           hanldeSubmit();
         }}
       >
+        {/* 背景 */}
         <div className="mb-1">
           背景色（16進）:#
           <span className="col-3 d-inline-block mx-1">
@@ -78,6 +82,8 @@ function InputArea() {
 
           <span className="d-none d-sm-inline">(enterで変更されます)</span>
         </div>
+
+        {/* 文字色 */}
         <div className="mb-1">
           文字の色（16進）:#
           <span className="col-3 d-inline-block mx-1">
@@ -106,6 +112,8 @@ function InputArea() {
         </div>
         <input type="submit" className="hidden" value="" />
       </form>
+
+      {/* テキスト */}
       <div>
         テキスト（30字以内）:
         <Form.Control
