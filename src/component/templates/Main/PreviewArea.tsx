@@ -13,6 +13,7 @@ function PreviewArea() {
     loading,
   } = useSelector((state: RootState) => state.input);
 
+  // CSSのコードを表示
   const Box = styled.div`
     width: ${rangeVals}px;
     height: ${rangeVals02}px;
