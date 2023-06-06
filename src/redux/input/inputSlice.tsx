@@ -16,17 +16,21 @@ const inputSlice = createSlice({
   name: "input",
   initialState,
   reducers: {
+    // Width
     handleChange: (state, action) => {
       const rangeVal = action.payload;
       state.rangeVals = rangeVal;
     },
+    // Height
     handleChange02: (state, action) => {
       const rangeVal02 = action.payload;
       state.rangeVals02 = rangeVal02;
     },
+    // 背景
     handleBgVal: (state, action) => {
       state.rangeVals03 = action.payload;
     },
+    // 文字色
     handleColorVal: (state, action) => {
       state.rangeVals04 = action.payload;
     },
@@ -47,6 +51,7 @@ const inputSlice = createSlice({
       state.loading = true;
       state.submitText04 = state.rangeVals04;
     },
+    // テキスト
     handleChange05: (state, action) => {
       const rangeVal05 = action.payload.value;
       if (rangeVal05.length > 30) {
