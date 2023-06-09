@@ -15,6 +15,7 @@ function Header() {
       <div className="container d-flex justify-content-between align-items-center">
         <h1 className="header-ttl"><Link to="/">テキスト真ん中君</Link></h1>
         {user ? (
+          // メニュー
           <div className="d-flex align-items-center">
             <DropdownButton
               variant="secondary"
@@ -41,6 +42,7 @@ function Header() {
             </DropdownButton>
           </div>
         ) : (
+          // Googleログインボタン
           <GoogleLogin />
         )}
       </div>
