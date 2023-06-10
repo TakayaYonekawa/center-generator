@@ -17,6 +17,7 @@ function SaveBtn() {
   const SaveCode = () => {
     const saveCollection = db.collection("save-code").doc();
     
+    // 保存データ
     saveCollection.set({
       uid,
       id: saveCollection.id,
