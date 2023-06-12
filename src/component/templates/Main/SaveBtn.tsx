@@ -35,6 +35,7 @@ function SaveBtn() {
     <div>
       <div className="mb-5 text-center">
         {user ? (
+          // 保存ボタン
           <Button
             variant="primary"
             size="lg"
@@ -45,6 +46,7 @@ function SaveBtn() {
             保存する
           </Button>
         ) : (
+          // ログイン前
           <>
             <Card style={{ width: "30rem", margin: "0 auto" }}>
               <Card.Body>
