@@ -11,6 +11,7 @@ const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
+    // グーグル認証
     signInWithGoogle: () => {
       const provider = new GoogleAuthProvider();
       signInWithPopup(auth, provider);

@@ -10,6 +10,7 @@ const buttonSlice = createSlice({
   name: "button",
   initialState,
   reducers: {
+    // リスト全て削除
     deleteList: (state, action) => {
       db.collection('save-code').doc(action.payload).delete();
       alert("データが削除されました。")
